@@ -8,7 +8,8 @@ project(${OUTPUT})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(${OUTPUT} main.cpp)
+# add_executable(${OUTPUT} main.cpp)
+add_subdirectory(launch_a_thread)
 
 if(USE_BOOST)
 
