@@ -16,4 +16,4 @@ if(USE_BOOST)
   set(Boost_USE_MULTITHREADED      ON)
 endif()
 
-add_subdirectory(launch_thread)
+add_subdirectory(split)
