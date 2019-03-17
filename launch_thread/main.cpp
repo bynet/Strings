@@ -7,19 +7,7 @@
 #include <sstream>
 #include <ErrorMessage.hpp>
 #include <mutex> 
-//https://stackoverflow.com/questions/31897364/how-to-name-stdthread-on-mac-os-x-in-c11
-
-class RandomNumber{
-public:
-    static int Generate(unsigned int lower_limit , unsigned int upper_limit ) {
-
-        if( upper_limit <= lower_limit )
-            throw std::invalid_argument( ErrorMessage() << "upperlimit " << upper_limit << " can not be smaller than lowerlimit " << lower_limit  ) ;
-        std::srand(std::time(0));
-        return  ( lower_limit + (std::rand() % (upper_limit - lower_limit ))); 
-    }
-
-};
+#include <RandomNumber.hpp>
 
 class background_task{
     mutable std::string name ;
