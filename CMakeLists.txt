@@ -9,6 +9,7 @@ project(${PROJECT})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/Common)
+add_subdirectory(launch_a_thread)
 
 if(USE_BOOST)
   find_package(Boost REQUIRED COMPONENTS system log)
