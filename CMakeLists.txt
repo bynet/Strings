@@ -4,6 +4,7 @@ set(PROJECT "QuickSample")
 set(USE_BOOST 1)
 set(OUTPUT ${PROJECT})
 
+SET(CMAKE_BUILD_TYPE Debug)
 
 project(${PROJECT})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -17,3 +18,4 @@ if(USE_BOOST)
 endif()
 
 add_subdirectory(split)
+add_subdirectory(tokenizer)
